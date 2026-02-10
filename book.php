@@ -175,7 +175,7 @@ $is_available = true;
 }
 </style>
 
-<link rel="stylesheet" href="assets/css/book.css">
+<link rel="stylesheet" href="book.css">
 
 <div class="book-details-page">
     <div class="book-details-container">

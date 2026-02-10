@@ -26,7 +26,7 @@ if ($total_pages > 0 && $current_page > $total_pages) {
 } elseif ($total_pages == 0) {
     $current_page = 1;
 }
-?>
+?> 
 <style>
 /* Стилове за Топ заглавия - като promo_books.php */
 .page-content-top {

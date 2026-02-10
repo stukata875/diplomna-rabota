@@ -16,6 +16,8 @@
                     <p class="brand-tagline">Вашата онлайн книжарница</p>
                 </div>
             </div>
+
+             <link href="footer.css">
             
             <div class="footer-newsletter">
                 <h4>Бюлетин за нови заглавия</h4>
@@ -34,6 +36,7 @@
                 </form>
             </div>
         </div>
+        
         
         <!-- Основно съдържание на футъра -->
         <div class="footer-main">
