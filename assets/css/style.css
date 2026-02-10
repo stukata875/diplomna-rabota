@@ -1,0 +1,395 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Заглавия */
+h1 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e60000;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin: 25px 0 15px 0;
+}
+
+h3 {
+    font-size: 18px;
+    color: #333;
+    margin: 20px 0 10px 0;
+}
+
+/* Линкове */
+a {
+    color: #e60000;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #c40000;
+    text-decoration: underline;
+}
+
+/* Бутони */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #e60000;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-align: center;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background: #c40000;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(230, 0, 0, 0.3);
+    text-decoration: none;
+}
+
+.btn-secondary {
+    background: #6c757d;
+}
+
+.btn-secondary:hover {
+    background: #5a6268;
+}
+
+/* Форми */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border 0.3s;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #e60000;
+}
+
+/* Карти */
+.card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+    margin-bottom: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+/* Съобщения */
+.alert {
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.alert-success {
+    background: #e6f7e6;
+    color: #2e7d32;
+    border: 1px solid #c8e6c9;
+}
+
+.alert-error {
+    background: #ffe6e6;
+    color: #e60000;
+    border: 1px solid #ffcccc;
+}
+
+/* Таблици */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.table th {
+    background: #e60000;
+    color: white;
+    padding: 15px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.table tr:last-child td {
+    border-bottom: none;
+}
+
+/* Грид система */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+}
+
+.col {
+    flex: 1;
+    padding: 0 10px;
+    min-width: 250px;
+}
+
+/* Утилити класове */
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.mt-20 { margin-top: 20px; }
+.mb-20 { margin-bottom: 20px; }
+.p-20 { padding: 20px; }
+
+/* Анимации */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-out;
+}
+
+/* Медиа заявки за мобилни устройства */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    h1 {
+        font-size: 26px;
+    }
+    
+    h2 {
+        font-size: 20px;
+    }
+    
+    .btn {
+        padding: 10px 20px;
+        width: 100%;
+    }
+    
+    .table {
+        font-size: 14px;
+    }
+}
+
+/* Допълнителни общи стилове */
+.page-content {
+    padding: 20px;
+}
+
+.hero-section {
+    text-align: center;
+    padding: 40px 20px;
+    background: #f9f9f9;
+    margin-bottom: 40px;
+    border-radius: 10px;
+}
+
+.hero-section h1 {
+    color: #333;
+    margin-bottom: 20px;
+    border-bottom: none;
+}
+
+.hero-section p {
+    color: #666;
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto 30px;
+}
+
+.hero-btn {
+    background: #e60000;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    transition: background 0.3s;
+}
+
+.hero-btn:hover {
+    background: #c40000;
+    text-decoration: none;
+}
+
+/* Стилове за cart.php */
+.cart-container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.cart-title {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #e60000;
+}
+
+.empty-cart {
+    text-align: center;
+    padding: 60px 20px;
+    background: #f9f9f9;
+    border-radius: 12px;
+    margin: 40px 0;
+}
+
+.empty-cart-icon {
+    font-size: 80px;
+    color: #ddd;
+    margin-bottom: 20px;
+    opacity: 0.7;
+}
+
+.empty-cart h2 {
+    color: #666;
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+
+.empty-cart p {
+    color: #888;
+    margin-bottom: 30px;
+    font-size: 16px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    background: white;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.cart-table th {
+    padding: 18px 20px;
+    text-align: left;
+    font-weight: bold;
+    background: linear-gradient(135deg, #e60000, #c40000);
+    color: white;
+}
+
+.cart-table td {
+    padding: 25px 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.cart-item-info {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.cart-item-image img {
+    width: 90px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.quantity-btn {
+    width: 40px;
+    height: 40px;
+    background: #f0f0f0;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.quantity-input {
+    width: 60px;
+    height: 40px;
+    text-align: center;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.cart-summary {
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 40px 0;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #dee2e6;
+}
+
+.cart-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 1px solid #eee;
+}
